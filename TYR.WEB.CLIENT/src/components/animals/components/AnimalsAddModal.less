@@ -1,0 +1,65 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.ant-form-item-control-input {
+  min-height: 0px !important;
+}
+
+.animals-add-modal {
+  &__modal {
+    width: 1500px !important;
+
+    &__title {
+      font-size: larger;
+    }
+  }
+
+  &__two-col-lyt {
+    width: 50%;
+  }
+
+  &__person-col {
+    width: 720px;
+  }
+
+  &__org-col {
+    width: 720px;
+  }
+
+  &__notes {
+    width: 720px;
+  }
+
+  &__form {
+    &__divider {
+      margin-top: 0px !important;
+      border-top: @tyr-primary  !important;
+    }
+
+    &__item {
+      &--inline {
+        display: inline-block;
+        width: calc(50% - 10px);
+      }
+    }
+
+    &__hr {
+      width: 90%;
+      // margin-left: 15%;
+      margin-right: auto;
+      border-top: 1px solid @tyr-primary  !important;
+    }
+
+    &__header {
+      margin: 0 auto 30px 10%;
+    }
+
+    &__inline {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      align-items: baseline;
+      gap: 5px;
+      width: 100%;
+    }
+  }
+}

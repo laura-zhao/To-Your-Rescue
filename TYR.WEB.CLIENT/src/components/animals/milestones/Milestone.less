@@ -1,0 +1,31 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.milestone {
+    height: 84vh;
+
+    &__button {
+        margin-left: 10px;
+
+        &--primary {
+            background-color: @tyr-primary  !important;
+            border-color: @tyr-primary  !important;
+
+            &:focus,
+            &:hover,
+            &:active {
+                background-color: #FFF !important;
+                border-color: @tyr-primary  !important;
+                box-shadow: none !important;
+            }
+        }
+
+        &:focus,
+        &:hover,
+        &:active {
+            color: @tyr-primary  !important;
+            border-color: @tyr-primary  !important;
+            box-shadow: none !important;
+        }
+    }
+}

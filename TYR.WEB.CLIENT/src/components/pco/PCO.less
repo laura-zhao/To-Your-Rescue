@@ -1,0 +1,48 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.ftr-pco {
+  height: 84vh;
+  
+  &__header-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__ct {
+    &__filter {
+      width: 150px;
+
+      &:hover {
+        color: @tyr-primary !important;
+        border-color: @tyr-primary !important;
+      }
+
+      &:active {
+        border-color: @tyr-primary !important;
+        color: @tyr-primary !important;
+      }
+
+      &::selection {
+        border-color: @tyr-primary !important;
+        color: @tyr-primary !important;
+      }
+    }
+  }
+
+  &__table-row-btn {
+    cursor: pointer;
+
+    &:hover {
+      color: @tyr-primary !important;
+    }
+  }
+
+  &__table-cell-flag {
+    &--flagged {
+      color: red !important;
+    }
+  }
+}

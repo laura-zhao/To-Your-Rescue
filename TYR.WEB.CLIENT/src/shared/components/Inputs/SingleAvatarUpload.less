@@ -1,0 +1,36 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.action-item {
+  display: none !important;
+}
+
+.form-div-avatar {}
+
+.container-div {}
+
+.image-container {
+  object-fit: contain;
+  background-color: #BFBFBF !important;
+  border: 1px dashed #8F8F8F !important;
+}
+
+.action-item:hover {
+  .image-container {
+    background-color: #464444 !important;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.image-container:hover {
+  background-color: #464444 !important;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.image-wrapper:hover {
+  .action-item {
+    display: block !important;
+  }
+}

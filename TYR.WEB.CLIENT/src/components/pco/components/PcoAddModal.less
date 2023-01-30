@@ -1,0 +1,44 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.pco-add-modal {
+
+  &__modal {
+    width: 1500px !important;
+
+    &__title {
+      font-size: larger;
+    }
+  }
+  &__modal_minified {
+    width: 1000px !important;
+
+    &__title {
+      font-size: larger;
+    }
+  }
+  &__notes {
+    width: 720px;
+  }
+  &__form {
+
+    &__tooltip {
+      min-width: 350px;
+    }
+
+    &__inline {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      align-items: baseline;
+      gap: 5px;
+      width: 100%;
+    }
+
+    &__item {
+      &--inline {
+        display: inline-block;
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}

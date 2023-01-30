@@ -1,0 +1,82 @@
+@import '~antd/dist/antd.less';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body {
+  // zoom: 120% !important;
+  // -moz-transform: scale(3);
+}
+
+.menu-left {
+  width: calc(100% - 18%);
+
+  // @media only screen and (max-width: 600px) {
+  //   body {
+  //     width: calc(100% - 300px);
+  //   }
+  // }
+}
+
+.menu-right {}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-pagination-item,
+.ant-pagination-jump-next,
+.ant-pagination-jump-prev {
+  display: none !important;
+}
+
+.mobile-view {
+  display: none !important;
+}
+
+.desktop-view {
+  display: block !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-view {
+    display: block !important;
+  }
+
+  .desktop-view {
+    display: none !important;
+  }
+}

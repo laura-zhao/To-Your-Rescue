@@ -1,0 +1,49 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+@desktop: ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@mobile: ~"only screen and (min-width: 400px) and (max-width: 650px)";
+
+.ftr-dashboard {
+  min-height: 80vh;
+  &__header-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__card {
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+    box-shadow: 5px 8px 24px 5px rgba(208, 216, 243, 0.6);
+  }
+  &__col__card {
+    border-radius: 10px;
+    margin: 20px;
+  }
+  &__card__img {
+    width: 100px;
+  }
+  &__button{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 12px;
+    height: 60px;
+    width: 350px;
+  }
+  
+
+@media @desktop {
+  footer {
+    width: 940px;
+  }
+}
+
+@media @tablet {
+  footer {
+    width: 768px;
+  }
+}
+}

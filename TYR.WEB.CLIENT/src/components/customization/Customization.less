@@ -1,0 +1,48 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.ftr-customization {
+  
+  &__header-row {
+    margin-bottom: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    margin-left: 10px;
+
+    &--primary {
+      background-color: @tyr-primary !important;
+      border-color: @tyr-primary !important;
+
+      &:focus, &:hover, &:active {
+        background-color: #FFF !important;
+        border-color: @tyr-primary !important;
+        box-shadow: none !important;
+      }
+    }
+
+    &:focus, &:hover, &:active {
+      color: @tyr-primary !important;
+      border-color: @tyr-primary !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+
+.ant-tabs-nav-operations {
+  width: 200px !important;
+  background-color: rgb(255, 255, 255);
+}
+
+// @media screen {
+//   @media (max-width: 600px) {
+//     .ant-tabs-nav {
+//       width: 60vw !important;
+//     }
+//   }
+// }

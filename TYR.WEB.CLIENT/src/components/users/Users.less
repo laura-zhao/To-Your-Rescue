@@ -1,0 +1,23 @@
+@import '~antd/dist/antd.less';
+@import url('src/style/theme/antd.tyrTheme.less');
+
+.ftr-users {
+  min-height: 80vh;
+  
+  &__header-row {
+    margin-bottom: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    margin-left: 10px;
+    color: @tyr-primary !important;
+    &:focus, &:hover, &:active {
+      background-color: #FFF !important;
+      border-color: @tyr-primary !important;
+      box-shadow: none !important;
+    }
+  }
+}
